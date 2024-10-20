@@ -1,17 +1,12 @@
 package com.java.FX.Controlador;
 
-import com.java.FX.FxApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import org.springframework.stereotype.Controller;
-
-import java.io.IOException;
 
 @Controller
 public class LoginIngrContraseniaContructor {
@@ -25,6 +20,8 @@ public class LoginIngrContraseniaContructor {
     @FXML
     private PasswordField Password;
 
+    boolean valor;
+
     @FXML
     void onEnterKeyPressed(KeyEvent event) {
         if (event.getCode().equals(KeyCode.ENTER)) {
@@ -34,26 +31,11 @@ public class LoginIngrContraseniaContructor {
 
     @FXML
     void Aceptar(ActionEvent event) {
-
-        if (Password.getText().equals("AMGS2024")) {
-
-            FXMLLoader fxml = new FXMLLoader(getClass().getResource("/com/java/Vista/MenuMaestro.fxml"));
-            fxml.setControllerFactory(FxApplication.context::getBean);
-            Scene MenuMaestro;
-            try {
-                MenuMaestro = new Scene(fxml.load());
-            } catch (IOException e) {
-                throw new RuntimeException("Ha ocurrido un error" + e);
-            }
-            Stage stage = new Stage();
-
-            stage.setTitle("Verificacion");
-            stage.setScene(MenuMaestro);
-            stage.show();
+        valor = Password.getText().equals("AMGS2024");
+        if (valor){
             Stage currentStage = (Stage) Password.getScene().getWindow();
             currentStage.close();
         }else {
-            // Crear una alerta de tipo ERROR
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error de Autenticación");
             alert.setHeaderText("Contraseña Incorrecta");
@@ -69,4 +51,10 @@ public class LoginIngrContraseniaContructor {
         currentStage.close();
     }
 
+    public boolean isValor() {
+        return valor;
+    }
+    public void setValor(boolean valor){
+        this.valor = valor;
+    }
 }
