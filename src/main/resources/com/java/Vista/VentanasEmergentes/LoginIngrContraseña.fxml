@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="149.0" prefWidth="297.0" style="-fx-background-color: DE4444;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.java.FX.Controlador.LoginIngrContraseniaContructor">
+   <children>
+      <PasswordField fx:id="Password" layoutX="22.0" layoutY="54.0" onKeyReleased="#onEnterKeyPressed" prefHeight="42.0" prefWidth="254.0" promptText="Ingrese la contraseña" />
+      <Label layoutX="22.0" layoutY="19.0" prefHeight="30.0" prefWidth="206.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: EEE9E9;" text="Ingrese la contraseña" />
+      <Button fx:id="BTaceptar" layoutX="87.0" layoutY="105.0" mnemonicParsing="false" onAction="#Aceptar" prefHeight="30.0" prefWidth="94.0" style="-fx-background-color: rgba(133, 226, 105, 1); -fx-font-weight: bold;" text="ACEPTAR" textFill="WHITE" />
+      <Button fx:id="BTcancelar" layoutX="189.0" layoutY="105.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="30.0" prefWidth="94.0" style="-fx-font-weight: bold; -fx-background-color: FF6767;" text="CANCELAR" textFill="WHITE" />
+   </children>
+</AnchorPane>
