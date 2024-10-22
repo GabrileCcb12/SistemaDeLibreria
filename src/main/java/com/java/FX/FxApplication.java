@@ -20,6 +20,7 @@ public class FxApplication extends Application{
 		Scene scene = new Scene(fxml.load());
 		stage.setTitle("Libreria virtual");
 		stage.setScene(scene);
+		stage.setResizable(false);
 		stage.show();
 	}
 

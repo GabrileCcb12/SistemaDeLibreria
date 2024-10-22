@@ -1,0 +1,7 @@
+.BtPrestamos{
+    -fx-background-color: #DE4444; /* Color original del botón */
+    -fx-text-fill: whit
+}
+.BtPrestamos:pressed{
+    -fx-background-color: #FF0000; /* Color cuando se presiona */
+}

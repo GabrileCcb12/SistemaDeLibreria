@@ -1,11 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.java.FX.Controlador.MenuMaestroControlador">
-   <children>
-      <Label layoutX="227.0" layoutY="192.0" text="ESTOY EN MENU MAESTRO" />
-   </children>
-</AnchorPane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <HBox fx:id="BoxLeft" prefHeight="650.0" prefWidth="205.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="435.0" prefWidth="205.0" style="-fx-background-color: DE4444;">
+               <children>
+                  <ImageView fitHeight="151.0" fitWidth="149.0" layoutX="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/icon-profesor.png" />
+                     </image></ImageView>
+                  <Label layoutX="63.0" layoutY="173.0" style="-fx-text-fill: FFFFFF; -fx-font-family: Arial; -fx-font-weight: bold; -fx-font-size: 16;" text="MAESTRO" />
+                  <Pane layoutX="-1.0" layoutY="193.0" prefHeight="260.0" prefWidth="207.0">
+                     <children>
+                        <VBox layoutY="14.0" prefHeight="272.0" prefWidth="207.0" spacing="17.0" style="-fx-border-color: D9D9D9;">
+                           <children>
+                              <Button fx:id="BtPrestamos" mnemonicParsing="false" prefHeight="46.0" prefWidth="206.0" style="-fx-text-fill: FFFFFF; -fx-font-weight: bold; -fx-font-size: 17px; -fx-padding: 0 60px 0 0px; -fx-content-display: LEFT;" styleClass="BtPrestamos" stylesheets="@../../../Styles/styles.css" text="Prestamos">
+                                 <graphic>
+                                    <ImageView fitHeight="33.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../image/IconBtPrestamos.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="BtLibros" mnemonicParsing="false" prefHeight="46.0" prefWidth="206.0" style="-fx-background-color: DE4444; -fx-text-fill: FFFFFF; -fx-font-weight: bold; -fx-font-size: 17px; -fx-padding: 0 98px 0 0px; -fx-content-display: LEFT; -fx-graphic-text-gap: 9px;" text="Libros">
+                                 <graphic>
+                                    <ImageView fitHeight="34.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../image/IconBtLibros.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="BtSeguimiento" mnemonicParsing="false" prefHeight="46.0" prefWidth="206.0" style="-fx-background-color: DE4444; -fx-text-fill: FFFFFF; -fx-font-weight: bold; -fx-font-size: 17px; -fx-padding: 0 50px  0 10px; -fx-content-display: LEFT;" text="Seguimiento">
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../image/IconBtSeguimientopng.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="BtAyuda" mnemonicParsing="false" prefHeight="46.0" prefWidth="206.0" style="-fx-background-color: DE4444; -fx-text-fill: FFFFFF; -fx-font-weight: bold; -fx-font-size: 17px; -fx-padding: 0 95Px 0 0px; -fx-content-display: LEFT; -fx-graphic-text-gap: 10px;" text="Ayuda">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../image/IconBtAyuda.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </left>
+   <top>
+      <Pane prefHeight="42.0" prefWidth="1100.0" style="-fx-background-color: DE4444;" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

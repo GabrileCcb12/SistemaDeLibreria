@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="609.0" prefWidth="184.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.java.FX.Controlador.LoginControlador">
    <children>
-      <AnchorPane prefHeight="609.0" prefWidth="1031.0" style="-fx-background-color: DE4444;">
+      <AnchorPane prefHeight="609.0" prefWidth="1031.0" scaleShape="false" style="-fx-background-color: DE4444;">
          <children>
             <Pane layoutX="169.0" layoutY="106.0" prefHeight="398.0" prefWidth="693.0">
                <children>
