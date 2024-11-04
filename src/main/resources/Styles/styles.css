@@ -5,3 +5,33 @@
 .BtPrestamos:pressed{
     -fx-background-color: #FF0000; /* Color cuando se presiona */
 }
+
+.Marco{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5),6,0,0,0);
+}
+.MarcoLT{
+    -fx-background-color:#fff;
+    -fx-background-radius:8px;
+}
+
+.BtRealizarPrestamo{
+    -fx-background-color:#14A32A;
+}
+.BtRealizarDevolucion{
+    -fx-background-color:#FFC422;
+}
+.BtObtenerDetalles{
+    -fx-background-color:#2C76FF;
+}
+.BoXButton{
+    -fx-background-color:#187A27;
+}
+.BoXButtonDP{
+    -fx-background-color:#FF9D00;
+}
+.BoXButtonDPR{
+    -fx-background-color:#2C4FFF;
+}
+.BtEliminar{
+    -fx-background-color:#FB9E09;
+}
